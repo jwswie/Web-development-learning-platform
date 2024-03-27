@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация пользователя</title>
+    <style>
+        body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("123d.jpg");
+            background-blend-mode: darken;
+            filter: blur(10px);
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s ease-out;
+            z-index: 1;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="submit"],
+        .captcha input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-bottom: 1px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .captcha {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .captcha img {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: auto;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Регистрация</h2>
+        <form id="registrationForm" action="registration_process.php" method="POST">
+            <input type="text" id="username" name="username" placeholder="Ник" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+            <div class="captcha">
+                <input type="text" id="captchaInput" name="captcha" placeholder="Введите капчу" required>
+                <img src="c1.jpeg" alt="Капча">
+            </div>
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+
+    <script>
+        var users = [];
+
+        function addUser(username, email, password) {
+            users.push({ username: username, email: email, password: password });
+        }
+
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var captchaInput = document.getElementById("captchaInput").value;
+
+            if (captchaInput.toLowerCase() === "smwm") {
+                addUser(username, email, password);
+                alert("Пользователь зарегистрирован!");
+                window.location.href = "login.html";
+            } else {
+                alert("Неправильная капча. Попробуйте еще раз.");
+            }
+        });
+    </script>
+</body>
+</html>
