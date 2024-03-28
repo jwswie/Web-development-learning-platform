@@ -118,3 +118,66 @@ body {
     font-family: inherit;
     border: 0 solid #ededed;;
 }
+
+.ContentRow {
+    display: flex; 
+    flex-direction: row;
+    width: 65%; height: 200px; 
+    position: relative;
+    margin-bottom: 15px;
+    top: 525px;
+    left: 298px;
+}
+
+.main-item {    
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 7px; 
+    position: relative;
+    
+}
+
+.Content {
+    flex-direction: column;
+    position: relative;
+    width: 320px; 
+    height: 200px;
+    margin-right: 14px;
+    background-color: #ffffff;
+}
+
+.LessonHeader{
+    position: relative;
+    font-size: 20px;
+    top: 15px; left: 20px;
+}
+
+.Description{
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    left: 20px; top: 15px;
+    color: #464646;
+}
+
+.StartButton{
+    position: relative; 
+    top: 20px; left: 20px;
+    box-sizing: inherit;
+    align-items: center;
+    padding: 6px 10px;
+    min-height: 30px;
+    font-size: 14px;
+    line-height: 1.29;
+    border-radius: 4px;
+    background: #0056b3;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    width: 88px;
+    border: none;
+}
+
+.StartButton:hover {
+    background-color: #0864c5;
+}
