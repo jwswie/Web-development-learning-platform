@@ -119,14 +119,18 @@ body {
     border: 0 solid #ededed;;
 }
 
+.LessonContainer{
+    width: 80%; 
+    position: relative;
+    top: 203px;
+}
+
 .ContentRow {
     display: flex; 
     flex-direction: row;
-    width: 65%; height: 200px; 
+    width: 100%; height: 200px; 
     position: relative;
     margin-bottom: 15px;
-    top: 525px;
-    left: 298px;
 }
 
 .main-item {    
@@ -134,7 +138,6 @@ body {
     background-color: #ffffff;
     border-radius: 7px; 
     position: relative;
-    
 }
 
 .Content {
