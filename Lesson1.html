@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Введение в HTML</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Введение в HTML</h1>
+        <p>HTML (HyperText Markup Language) - язык разметки, который используется для создания веб-страниц. Когда мы открываем<br>веб-страницу в браузере, браузер интерпретирует HTML-код и отображает содержимое в виде веб-страницы</p>
+    
+        <h2>Структура документа HTML:</h2>
+        <p>HTML-документ состоит из различных элементов, которые определяют структуру и содержимое страницы. Основной<br>элемент называется <span class="highlight"><code>&lt;html&gt;</code></span>, и он содержит все остальные элементы на странице. Внутри <code>&lt;html&gt;</code> есть два основных блока: <span class="highlight"><code>&lt;head&gt;</code></span> и <span class="highlight"><code>&lt;body&gt;</code></span></p>
+        <ul>
+            <li><span class="highlight"><code>&lt;head&gt;</code></span>: Этот блок содержит информацию о документе, такую как заголовок страницы (<code>&lt;title&gt;</code>), подключение стилей<br>CSS, метаданные и скрипты</li>
+            <li><span class="highlight"><code>&lt;body&gt;</code></span>: Здесь располагается основное содержимое веб-страницы, такое как текст, изображения, ссылки и другие<br>элементы</li>
+        </ul>
+    
+        <h2>Теги и элементы:</h2>
+        <p>В HTML мы используем <span class="highlight">теги</span> для определения различных типов содержимого на странице. Теги обрамляют элементы и дают<br>им определённое значение или функцию</p>
+        
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" readonly><!DOCTYPE html>
+<html>
+<head>
+    <title>Пример HTML-страницы</title>
+</head>
+<body>
+    <h1>Привет, мир!</h1>
+    <p>Это пример HTML-страницы. Вот абзац текста.</p>
+    <img src="example.jpg" alt="Пример изображения">
+    <a href="https://www.example.com">Ссылка на сайт</a>
+</body>
+</html>
+</textarea>
+        </div>
+
+        <p>В данном примере:</p>
+        <ul>
+            <li><span class="highlight"><code>&lt;h1&gt;</code></span>: Тег для заголовка верхнего уровня, который обозначает самый важный заголовок на странице</li>
+            <li><span class="highlight"><code>&lt;p&gt;</code></span>: Тег для абзаца текста</li>
+            <li><span class="highlight"><code>&lt;img&gt;</code></span>: Тег для вставки изображения. <span class="highlight"><code>src</code></span> указывает на путь к изображению, а <span class="highlight"><code>alt</code></span> - на альтернативный текст, если<br>картинка не прогрузится</li>
+            <li><span class="highlight"><code>&lt;a&gt;</code></span>: Тег для создания ссылок. <span class="highlight"><code>href</code></span> указывает на адрес, на который происходит переход при клике на ссылку</li>
+        </ul>
+    
+        <p>HTML - это основа веб-разработки, и понимание его основ является важным шагом для создания красивых и<br>функциональных веб-страниц. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте веб-страницу с информацией о себе. Ваша страница должна содержать следующие элементы: </p>
+            <ul>
+                <li style="color: white;">Заголовок</li>
+                <li style="color: white;">Несколько параграфов с информацией о вас</li>
+                <li style="color: white;">Ваша фотография</li>
+                <li style="color: white;">Ссылка на ваш любимый веб-сайт или на ваш аккаунт в социальной сети</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>

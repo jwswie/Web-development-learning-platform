@@ -1,0 +1,170 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eeeeee;
+}
+
+.header-top-panel{
+    position: absolute;
+    top: 0; left: 0;
+    background-color: #0056b3;
+    height: 8%;
+    width: 100%;
+}
+
+.header-bottom-panel{
+    justify-content: center;
+    position: absolute;
+    top: 8%; left: 0;
+    background-color: #ffffff;
+    height: 10%;
+    width: 100%;
+}
+
+.menu {
+    overflow: hidden;
+    position: relative; 
+    top: 20px;
+    left: 5%;
+}
+
+.menu-item {
+    position: relative; 
+    float: left; 
+    margin-right: 30px; 
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    color: #909090;
+}
+
+.MenuButton{
+    position: relative; 
+    top: -12px;
+    left: 90%;
+    box-sizing: inherit;
+    align-items: center;
+    padding: 6px 10px;
+    min-height: 30px;
+    font-size: 14px;
+    line-height: 1.29;
+    border-radius: 4px;
+    background: #0056b3;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    width: 58px;
+    border: none;
+}
+
+.MenuButton:hover {
+    background-color: #0864c5;
+}
+
+.article{
+    position: absolute;
+    top: 130px;
+    background-color: #ffffff;
+    width: 90%;
+    border-radius: 5px;
+}
+
+h1{
+    position: relative;
+    left: 20px;
+    color: #1f2937;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p{
+    position: relative;
+    left: 20px;
+    color: #4c545f;
+    font-size: 20px;
+}
+
+h2{
+    position: relative;
+    left: 20px;
+    margin-top: 40px;
+    color: #1f2937;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+li{
+    position: relative;
+    left: 20px;
+    color: #4c545f;
+    font-size: 20px;
+}
+
+.highlight {
+    color: #0056b3;
+}
+  
+h3{
+    position: relative;
+    left: 20px;
+    color: #1f2937;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.html-example {
+    position: relative;
+    left: 20px;
+    resize: none;
+    width: 430px; 
+    height: 285px;
+    overflow: auto; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.TaskDiv{
+    position: relative;
+    left: 20px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    width: 97%;
+    height: 250px;
+}
+
+.StartTaskButton{
+    position: relative; 
+    top: 40px;
+    left: 44%;
+    box-sizing: inherit;
+    align-items: center;
+    padding: 6px 10px;
+    min-height: 50px;
+    font-size: 15px;
+    border-radius: 4px;
+    background: #0056b3;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    width: 158px;
+    border: none;
+}
+
+.StartTaskButton:hover {
+    background-color: #0864c5;
+}
