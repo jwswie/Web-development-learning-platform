@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Формы и элементы форм</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Формы и элементы форм: текстовые поля, кнопки,<br>флажки, переключатели, выпадающие списки</h1>
+        <p>На большинстве веб-сайтов вы видели формы. Они могут быть использованы для отправки сообщений, регистрации пользователей, выполнения поиска и многого другого. Формы делают взаимодействие с сайтом легким и удобным для пользователей. Давайте рассмотрим, как создать простую форму с несколькими типами элементов</p>
+    
+        <h2>Текстовые поля:</h2>
+        <p>Текстовые поля позволяют пользователям вводить текст. Вы можете использовать их для запроса имени пользователя,<br>адреса электронной почты и т. д</p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 300px; height: 100px;" readonly> <form>
+   <label>Имя пользователя:</label>
+   <input type="text">
+</form>                                   
+</textarea>
+        </div>
+
+        <h2>Кнопки:</h2>
+        <p>Кнопки используются для отправки данных формы или выполнения других действий. Вот пример кнопки отправки</p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 300px; height: 90px;" readonly> <form>
+    <input type="submit" value="Отправить">
+</form>                                   
+</textarea>
+        </div>
+
+        <h2>Флажки:</h2>
+        <p>Флажки (чекбоксы) позволяют пользователям выбирать одно или несколько значений из предложенных. Например,<br>пользователь может отметить, что он согласен с правилами сайта</p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 380px; height: 90px;" readonly> <form>
+    <label>Я согласен с правилами сайта</label>
+    <input type="checkbox" value="yes">
+</form>                                   
+</textarea>
+        </div>
+
+        <h2>Переключатели:</h2>
+        <p>Переключатели позволяют пользователю выбирать только одно значение из предложенных. Например, пол пользователя (мужской/женский) может быть выбран с помощью переключателя</p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 380px; height: 160px;" readonly> <form>
+    <input type="radio" name="gender" value="male">
+    <label>Мужской</label><br>
+    <input type="radio" name="gender" value="female">
+    <label>Женский</label><br>
+</form>                                        
+</textarea>
+        </div>
+
+        <h2>Выпадающие списки:</h2>
+        <p>Выпадающие списки позволяют пользователям выбирать один вариант из списка. Например, вы можете предложить пользователю выбрать свою страну</p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 380px; height: 230px;" readonly> <form>
+   <label>Страна:</label>
+   <select name="country">
+      <option value="usa">США</option>
+      <option value="uk">Великобритания</option>
+      <option value="france">Франция</option>
+      <option value="germany">Германия</option>
+   </select>
+</form>
+                                                      
+</textarea>
+        </div>
+ 
+        <p>Создание форм - это важная часть веб-разработки. С помощью HTML вы можете легко создавать различные типы элементов форм и делать ваш сайт более интерактивным и удобным для пользователей. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте веб-страницу с формой регистрации. Ваша страница должна содержать следующие элементы: </p>
+            <ul>
+                <li style="color: white;">Текстовое поле для ввода имени пользователя</li>
+                <li style="color: white;">Текстовое поле для ввода адреса электронной почты</li>
+                <li style="color: white;">Переключатель для выбора пола ("Мужской" и "Женский")</li>
+                <li style="color: white;">Выпадающий список для выбора страны пользователя</li>
+                <li style="color: white;">Кнопка "Зарегистрироваться" для отправки формы</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>

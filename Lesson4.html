@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Таблицы</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Создание таблиц</h1>
+        <p>На веб-страницах таблицы играют важную роль, позволяя нам организовать информацию в удобном виде. Создание таблиц в HTML довольно просто, особенно когда вы уже знакомы с основами этого языка</p>
+    
+        <h2>Создание таблицы:</h2>
+        <p>Создадим таблицу с тремя строками и тремя столбцами. Каждая ячейка таблицы будет содержать простой текст</p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 250px; height: 390px;" readonly> <table>
+    <tr>
+        <td>Ячейка 1</td>
+        <td>Ячейка 2</td>
+        <td>Ячейка 3</td>
+    </tr>
+    <tr>
+        <td>Ячейка 4</td>
+        <td>Ячейка 5</td>
+        <td>Ячейка 6</td>
+    </tr>
+    <tr>
+        <td>Ячейка 7</td>
+        <td>Ячейка 8</td>
+        <td>Ячейка 9</td>
+    </tr>
+</table>                        
+</textarea>
+        </div>
+
+        <ul>
+            <li><span class="highlight"><code>&lt;tr&gt;</code></span>: Строка таблицы</li>
+            <li><span class="highlight"><code>&lt;td&gt;</code></span>: Ячейка с данными</li>
+        </ul>
+ 
+        <p>Таким образом вы можете создавать таблицы на своих веб-страницах, делая информацию более ясной и удобной для ваших пользователей. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте веб-страницу для расписания занятий. Ваша страница должна содержать следующие элементы: </p>
+            <ul>
+                <li style="color: white;">Таблица</li>
+                <li style="color: white;">В таблице должно быть 3 колонки: "Время занятия", "Название занятия" и "Аудитория"</li>
+                <li style="color: white;">Внесите 5-7 значений в таблицу</li>
+                <li style="color: white;">Добавьте дополнительные колонки (по желанию)</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>

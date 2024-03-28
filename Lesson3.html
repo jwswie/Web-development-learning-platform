@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Ссылки и изображения</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Ссылки и изображения: теги <code>&lt;a&gt;</code> и <code>&lt;img&gt;</code></h1>
+        <p>На веб-страницах ссылки помогают переходить с одной страницы на другую, а изображения делают страницы красивыми и интересными. Для добавления ссылок и изображений мы используем теги <span class="highlight"><code>&lt;a&gt;</code></span> и <span class="highlight"><code>&lt;img&gt;</code></span></p>
+        <h2>Ссылки с тегом <code>&lt;a&gt;</code>:</h2>
+        <p>Ссылки позволяют пользователям переходить на другие страницы в Интернете или на той же странице</p>
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 400px; height: 30px;" readonly><a href="https://www.example.com">Нажми на меня</a></textarea>
+        </div>
+        <ul>
+            <li><span class="highlight"><code>&lt;a&gt;</code></span>: Открывающий тег для создания ссылки</li>
+            <li><span class="highlight"><code>&lt;href&gt;</code></span>: Атрибут, который указывает адрес страницы, на которую нужно перейти</li>
+            <li><span class="highlight">"https://www.example.com"</span>: Адрес страницы, куда должна вести ссылка</li>
+            <li><span class="highlight">Нажми на меня</span>: Текст, который пользователь видит и на который он может нажать</li>
+        </ul>
+
+        <h2>Изображения с тегом <code>&lt;img&gt;</code>:</h2>
+        <p>Изображения делают страницы более привлекательными и информативными</p>
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 400px; height: 30px;" readonly><img src="image.jpg" alt="Описание изображения"></textarea>
+        </div>
+
+        <ul>
+            <li><span class="highlight"><code>&lt;img&gt;</code></span>: Тег для вставки изображения</li>
+            <li><span class="highlight">src</span>: Атрибут, который указывает путь к изображению</li>
+            <li><span class="highlight">"image.jpg"</span>: Путь к файлу изображения. Это может быть относительный путь (относительно текущей директории) или абсолютный путь</li>
+            <li><span class="highlight">alt</span>: Атрибут, который предоставляет текстовое описание изображения. Этот текст отображается, если изображение не может быть загружено</li>
+        </ul>
+ 
+        <p>Теперь вы знаете, как создавать ссылки и добавлять изображения на ваши веб-страницы! Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте веб-страницу "Галерея изображений". Ваша страница должна содержать следующие элементы: </p>
+            <ul>
+                <li style="color: white;">Заголовок страницы</li>
+                <li style="color: white;">Список изображений</li>
+                <li style="color: white;">Каждое изображение из списка должно содержать ссылку на оригинал изображения</li>
+                <li style="color: white;">У каждого изображения должен быть атрибут src, указывающий на путь к миниатюре изображения</li>
+                <li style="color: white;">Небольшое описание или подпись к каждому изображению (по желанию)</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>

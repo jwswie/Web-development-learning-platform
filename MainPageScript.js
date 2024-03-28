@@ -28,31 +28,24 @@ document.addEventListener("DOMContentLoaded", function() {
                     window.location.href = "Lesson1.html";
                     break;
                 case 2:
-                    // Действия для урока 2
-                    console.log('Нажата кнопка для урока 2');
+                    window.location.href = "Lesson2.html";
                     break;
-                case 3:
-                    // Действия для урока 3
-                    console.log('Нажата кнопка для урока 3');
+                case 3: 
+                    window.location.href = "Lesson3.html";
                     break;
                 case 4:
-                    // Действия для урока 4
-                    console.log('Нажата кнопка для урока 4');
+                    window.location.href = "Lesson4.html";
                     break;
                 case 5:
-                    // Действия для урока 5
-                    console.log('Нажата кнопка для урока 5');
+                    window.location.href = "Lesson5.html";
                     break;
                 case 6:
-                    // Действия для урока 6
                     console.log('Нажата кнопка для урока 6');
                     break;
                 case 7:
-                    // Действия для урока 7
                     console.log('Нажата кнопка для урока 7');
                     break;
                 default:
-                    // Действия по умолчанию, если ID неизвестен
                     console.log('Неизвестный урок');
                     break;
             }

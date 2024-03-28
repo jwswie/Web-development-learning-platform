@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Текстовые элементы</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Текстовые элементы: заголовки, параграфы, списки</h1>
+        <p>Когда вы начинаете создавать свои веб-страницы, одним из первых шагов будет добавление текста. На помощь приходят текстовые элементы HTML, которые позволяют структурировать и форматировать ваш контент</p>
+    
+        <h2>Заголовки:</h2>
+        <p>Заголовки используются для выделения важных частей вашего контента. В HTML существует шесть уровней заголовков, от<br><span class="highlight"><code>&lt;h1&gt;</code></span> до <span class="highlight"><code>&lt;h6&gt;</code></span>. Обычно <code>&lt;h1&gt;</code> используется для самого важного заголовка, а <code>&lt;h6&gt;</code> для менее значимых заголовков</p>
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 300px; height: 90px;" readonly><h1>Это заголовок первого уровня</h1>
+<h2>Это заголовок второго уровня</h2>
+<h3>Это заголовок третьего уровня</h3>             
+</textarea>
+        </div>
+
+        <h2>Параграфы:</h2>
+        <p>Параграфы используются для организации текста в абзацы</p>
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 300px; height: 90px;" readonly><p>Это пример параграфа</p>
+<p>Ещё один параграф</p>                           
+</textarea>
+        </div>
+
+        <h2>Списки:</h2>
+        <p>Списки помогают упорядочить информацию или выделить перечень элементов</p>
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 300px; height: 110px;" readonly><ul>
+   <li>Первый элемент списка</li>
+   <li>Второй элемент списка</li>
+   <li>Третий элемент списка</li>
+</ul>                                       
+</textarea>
+        </div>
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 300px; height: 110px;" readonly><ol>
+   <li>Первый элемент списка</li>
+   <li>Второй элемент списка</li>
+   <li>Третий элемент списка</li>
+</ol>                                       
+</textarea>
+        </div>
+        <ul>
+            <li><span class="highlight"><code>&lt;ul&gt;</code></span>: Неупорядоченный список</li>
+            <li><span class="highlight"><code>&lt;ol&gt;</code></span>: Упорядоченный список</li>
+        </ul>
+        <p>Списки так же могут быть смешанными</p>
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 300px; height: 220px;" readonly><ul>
+   <li>Пункт 1</li>
+   <li>Пункт 2
+     <ol>
+        <li>Вложенный пункт 1</li>
+        <li>Вложенный пункт 2</li>
+     </ol>
+   </li>
+   <li>Пункт 3</li>
+</ul>                                                 
+</textarea>
+        </div>
+ 
+        <p>Используя эти простые элементы, вы можете создавать четкие и структурированные веб-страницы. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте веб-страницу для блога. Ваша страница должна содержать следующие элементы: </p>
+            <ul>
+                <li style="color: white;">Заголовок и подзаголовок</li>
+                <li style="color: white;">Параграфы</li>
+                <li style="color: white;">Список использованых статей с ссылками на них</li>
+                <li style="color: white;">Изображения (по желанию)</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>
