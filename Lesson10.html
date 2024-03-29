@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Расположение элементов</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Расположение элементов: блочная модель, позиционирование, вложенность</h1>
+        <p>Когда вы создаёте веб-сайт, важно знать, как располагать элементы на странице так, чтобы они выглядели красиво и удобно<br>для пользователя. Есть несколько способов расположения элементов, которые мы рассмотрим: блочная модель, позиционирование и вложенность</p>
+    
+        <h2>Блочная модель:</h2>
+        <p>Основной способ расположения элементов на странице. Каждый элемент в HTML, такой как <code>&lt;div&gt;</code> или <code>&lt;p&gt;</code>, по умолчанию представляется как блок, который занимает всю доступную горизонтальную ширину и начинает новую строку</p>
+
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 400px; height: 40px;" readonly> <div class="block-element"> Это блочный элемент </div> </textarea> </div>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 300px; height: 150px;" readonly> .block-element {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        padding: 20px;
+}                         
+</textarea>
+        </div>
+
+        <h2>Позиционирование:</h2>
+        <p>Способ размещения элементов точно на странице. Вы можете указать, где элемент должен находиться с помощью<br>CSS-свойства <span class="highlight">position</span>. Оно может быть <span class="highlight">relative</span>, <span class="highlight">absolute</span>, <span class="highlight">fixed</span> или <span class="highlight">sticky</span></p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 400px; height: 40px;" readonly> <div class="position-element"> Этот элемент смещён относительно своего обычного местоположения </div> </textarea> </div>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 300px; height: 150px;" readonly> .position-element {
+        position: relative;
+        left: 50px;
+        top: 50px;
+        background-color: lightblue;
+}                         
+</textarea>
+        </div>
+
+        <h2>Вложенность:</h2>
+        <p>Это когда один элемент находится внутри другого. Вложенные элементы могут наследовать стили и находиться внутри блока родительского элемента</p>
+
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 300px; height: 150px;" readonly> <div class="parent">
+    <p>Это родительский элемент.</p>
+    <div class="child">
+        <p>Это вложенный элемент.</p>
+    </div>
+</div> </textarea> </div>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 250px; height: 200px;" readonly> .parent {
+    background-color: lightgray;
+    padding: 20px;
+}
+              
+.child {
+    background-color: lightblue;
+    padding: 10px;
+}
+                           
+</textarea>
+        </div>
+ 
+        <p>Правильное расположение элементов делает ваш сайт более привлекательным и удобным для пользователей. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Возьмите веб-страницу с блогом из <b>HTML Урок 2</b>. Добавьте на неё такие стили: </p>
+            <ul>
+                <li style="color: white;">Центрируйте текст заголовка страницы</li>
+                <li style="color: white;">Задайте каждому параграфу фиксированную ширину и высоту</li>
+                <li style="color: white;">Используйте разные методы позиционирования для блоков (например, абсолютное, относительное, фиксированное)</li>
+                <li style="color: white;">Сделайте один из параграфов вложенным в другой</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>

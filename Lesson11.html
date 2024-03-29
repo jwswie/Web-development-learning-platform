@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Текстовое оформление</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Текстовое оформление: размер, цвет, выравнивание, шрифты</h1>
+        <p>Когда вы создаёте веб-сайт, важно сделать его привлекательным и легко читаемым для посетителей. Один из способов<br>сделать это - правильно оформить текст на странице</p>
+    
+        <h2>Изменение размера текста:</h2>
+        <p>Вы можете легко изменить размер текста, используя свойство <span class="highlight">font-size</span> в CSS</p>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 200px; height: 80px;" readonly> h1 {
+        font-size: 24px;
+}                         
+</textarea> </div>
+
+        <h2>Изменение цвета текста:</h2>
+        <p>Чтобы изменить цвет текста, используйте свойство <span class="highlight">color</span></p>
+     
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 200px; height: 80px;" readonly>p {
+        color: red;
+}                         
+</textarea> 
+        </div>
+
+        <h2>Выравнивание текста:</h2>
+        <p>Чтобы выровнять текст по центру, слева или справа, используйте свойство <span class="highlight">text-align</span></p>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 200px; height: 80px;" readonly>p {
+        text-align: center;
+}                         
+</textarea> 
+        </div>
+
+        <h2>Изменение шрифта:</h2>
+        <p>Чтобы изменить шрифт текста, вы можете использовать свойство <span class="highlight">font-family</span></p>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 240px; height: 80px;" readonly>p {
+        font-family: Arial, sans-serif;
+}                         
+</textarea> 
+        </div>
+ 
+        <p>Это простые примеры того, как вы можете оформить текст на вашем веб-сайте с помощью CSS. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте веб-страницу с текстом. Добавьте на неё такие стили: </p>
+            <ul>
+                <li style="color: white;">Установите размер шрифта для всех параграфов на 16 пикселей</li>
+                <li style="color: white;">Установите цвет текста для заголовка на синий (#0000FF)</li>
+                <li style="color: white;">Установите выравнивание текста для всех параграфов по центру</li>
+                <li style="color: white;">Установите шрифт для всего текста на ваш выбор</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>

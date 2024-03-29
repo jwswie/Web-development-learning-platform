@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Фоны и Границы</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Фоны и границы: цвета, изображения, рамки</h1>
+        <p>Когда вы создаёте веб-сайт, важно, чтобы он выглядел привлекательно и легко читался. Один из способов сделать ваш сайт более привлекательным - использовать разные фоны и границы</p>
+    
+        <h2>Цвета:</h2>
+        <p>Цвета помогают вашему сайту быть ярким и интересным. Вы можете изменить цвет фона вашей веб-страницы, текста или<br>даже цвет границы вокруг блока</p>
+
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 350px; height: 50px;" readonly> <h1>Добро пожаловать на мой сайт!</h1> </textarea> </div>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 550px; height: 100px;" readonly> body {
+        background-color: lightblue; /* Изменение цвета фона */
+        color: darkblue; /* Изменение цвета текста на всей странице*/
+}                         
+</textarea>
+        </div>
+
+        <h2>Изображения:</h2>
+        <p>Вы можете установить изображение в качестве фона вашего сайта</p>
+     
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 600px; height: 100px;" readonly> body {
+        background-image: url('background.jpg'); /* Изменение фонового изображения */
+        background-size: cover; /* Растягиваем изображение на весь экран */
+}                         
+</textarea>
+        </div>
+
+        <h2>Рамки:</h2>
+        <p>Рамки помогают выделить определенные элементы на вашем сайте. Вы можете добавить рамку вокруг блока текста или изображения, чтобы сделать его более заметным</p>
+
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 450px; height: 100px;" readonly> <h1>Пример использования рамок</h1>
+<div class="frame">
+    <p>Это текст с рамкой вокруг него</p>
+</div>                     
+</textarea>
+        </div>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 550px; height: 100px;" readonly> .frame {
+        border: 2px solid red; /* Изменение цвета и толщины границы */
+        padding: 20px; /* Добавляем отступ внутри блока */
+}                         
+</textarea>
+        </div>
+ 
+        <p>Эти примеры помогут сделать ваш веб-сайт более привлекательным и удобным для пользователей. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Возьмите веб-страницу с расписанием занятий из <b>HTML Урок 4</b>. Добавьте на неё такие стили: </p>
+            <ul>
+                <li style="color: white;">Используйте внутренние стили</li>
+                <li style="color: white;">Добавьте рамку к элементу <code>&lt;td&gt;</code></li>
+                <li style="color: white;">Измените цвет рамки</li>
+                <li style="color: white;">Измените толщину рамки</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>
