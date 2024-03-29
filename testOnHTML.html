@@ -9,40 +9,42 @@
 <body>
   <main>
     <div class="test">
-      <h2 class="title">Тема теста</h2>
-      <p>Вопрос 1</p>
+      <h2 class="title">HTML</h2>
+      <p>Вопрос <span id="question-number">1</span>/15</p>
       <form>
         <fieldset>
-          <legend class="question">Выберите один из вариантов ответа</legend>
+          <legend class="question">Что такое HTML?</legend>
           <div class="variants">
             <div>
               <input type="radio" name="variant" id="variant1">
-              <label>1</label>
+              <label class="selector" for="variant1">Язык для создания стилей</label>
             </div>
 
             <div>
-              <input type="radio" name="variant" id="variant1">
-              <label>2</label>
+              <input type="radio" name="variant" id="variant2">
+              <label class="selector" for="variant2">Язык разметки, который используется для создания веб-страниц.</label>
             </div>
 
             <div>
-              <input type="radio" name="variant" id="variant1">
-              <label>3</label>
+              <input type="radio" name="variant" id="variant3">
+              <label class="selector" for="variant3">Тип данных</label>
             </div>
 
             <div>
-              <input type="radio" name="variant" id="variant1">
-              <label>4</label>
+              <input type="radio" name="variant" id="variant4">
+              <label class="selector" for="variant4">Метод</label>
             </div>
 
              <div>
-              <input type="radio" name="variant" id="variant1">
-              <label>5</label>
+              <input type="radio" name="variant" id="variant5">
+              <label class="selector" for="variant5">Не знаю ответ</label>
             </div>
           </div>
         </fieldset>
-        <div>
-          <button class="next">Дальше</button>
+        <div class="direction-block">
+          <button class="direction" id="back">*назад</button>
+          <button class="direction" id="complete">*завершить</button>
+          <button class="direction" id="forward">*вперед</button>
         </div>
       </form>
     </div>
