@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Аудио и Видео</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Добавление аудио и видео на веб-сайт</h1>
+        <p>Когда вы посещаете веб-сайты, вы, вероятно, видели видео и слушали музыку. Но как же это сделать?</p>
+    
+        <h2>Аудио на веб-сайте:</h2>
+        <p>Для вставки аудиофайла на ваш веб-сайт используется тег <span class="highlight"><code>&lt;audio&gt;</code></span></p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 450px; height: 90px;" readonly> <audio controls>
+     <source src="audio-file.mp3" type="audio/mpeg">
+     Ваш браузер не поддерживает аудио элементы
+</audio>                        
+</textarea>
+        </div>
+
+        <h2>Видео на веб-сайте:</h2>
+        <p>Для вставки видеофайла на ваш веб-сайт используется тег <span class="highlight"><code>&lt;video&gt;</code></span></p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 450px; height: 90px;" readonly> <video width="320" height="240" controls>
+     <source src="video-file.mp4" type="video/mp4">
+     Ваш браузер не поддерживает видео элементы
+</video>                        
+</textarea>
+        </div>
+
+        <ul>
+            <li><span class="highlight">type</span>: Формат файла</li>
+            <li>И видео и аудио будут отображаться уже с управляющими кнопками</li>
+        </ul>
+ 
+        <p>Таким образом вы можете легко добавлять аудио и видео на ваш веб-сайт. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте веб-страницу для прослушивания музыки или просмотра видео. Ваша страница должна содержать следующие элементы: </p>
+            <ul>
+                <li style="color: white;">Семантические элементы</li>
+                <li style="color: white;">Список аудио/видео элементов</li>
+                <li style="color: white;">Если ваш сайт для прослушивания музыки - добавьте к каждому треку обложку, название и исполнителя</li>
+                <li style="color: white;">Если ваш сайт для просмотра видео - добавьте к каждому видео название, описание и автора</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>

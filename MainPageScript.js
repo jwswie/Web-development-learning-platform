@@ -3,16 +3,24 @@ document.addEventListener("DOMContentLoaded", function() {
     const lessonContainer = document.querySelector('.LessonContainer');
     const allLessons = lessonContainer.querySelectorAll('.main-item');
     var startButtons = document.querySelectorAll('.StartButton');
+    var coursesCount = document.querySelector('.courses-count');
+
+    function updateCoursesCount(count) {
+        coursesCount.textContent = "Всего " + count + " уроков";
+    }
 
     searchInput.addEventListener('input', function() {
         const searchTerm = this.value.trim().toLowerCase();
+        var foundLessons = [];
 
         allLessons.forEach(function(lesson) {
             const title = lesson.querySelector('.LessonHeader').textContent.toLowerCase();
             const description = lesson.querySelector('.Description').textContent.toLowerCase();
 
             if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                foundLessons.push(lesson);
                 lesson.style.display = 'block';
+                updateCoursesCount(foundLessons.length);
             } else {
                 lesson.style.display = 'none';
             }
@@ -40,13 +48,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     window.location.href = "Lesson5.html";
                     break;
                 case 6:
-                    console.log('Нажата кнопка для урока 6');
+                    window.location.href = "Lesson6.html";
                     break;
                 case 7:
-                    console.log('Нажата кнопка для урока 7');
+                    window.location.href = "Lesson7.html";
                     break;
                 default:
-                    console.log('Неизвестный урок');
+                    alert('Неизвестный урок');
                     break;
             }
         });
