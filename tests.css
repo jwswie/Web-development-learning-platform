@@ -1,0 +1,38 @@
+.test {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+  gap: 0 10px;
+}
+
+.question {
+  text-align: center;
+}
+
+.test h2 {
+  margin: 15px 15px;
+  text-align: center;
+}
+
+.test p {
+  text-align: center;
+}
+
+.task {
+  margin: 15px 15px;
+}
+
+.variants {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.next {
+  cursor: pointer;
+  margin: 5px;
+  width: 100px;
+  height: 30px;
+}
