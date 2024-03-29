@@ -4,6 +4,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const allLessons = lessonContainer.querySelectorAll('.main-item');
     var startButtons = document.querySelectorAll('.StartButton');
     var coursesCount = document.querySelector('.courses-count');
+    const logInButton = document.querySelector('.MenuButton');
+    var users = localStorage.getItem('users');
+
+    logInButton.addEventListener('click', function() {
+        window.location.href = "registration.html";
+    });
+
+    if(users.length == 0){
+        logInButton.style.textContent = "Войти";
+    }
+    else{
+        logInButton.style.textContent = "Выйти";
+    }
+    
 
     function updateCoursesCount(count) {
         var lastDigit = count % 10;
