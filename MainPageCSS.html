@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MainPageStyle.css">
+    <title>Уроки по веб-разработке</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html" style="color: #000000;">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="CourseSearch">
+        <h1 class="search-title">Поиск уроков</h1>
+        <input class="text-input" type="text" placeholder="Поиск по названию урока">
+        <div class="courses-count">Всего 8 уроков</div>
+    </div>
+
+    <div class="LessonContainer">
+
+        <div class="ContentRow">
+            <div class="main-item Content">
+                <h1 class="LessonHeader">CSS Урок 1</h1>
+                <p class="Description">Основы CSS: стили, свойства, значения<br><br></p>
+                <button class="StartButton" id="8">Начать Урок</button> 
+            </div>
+            <div class="main-item Content">
+                <h1 class="LessonHeader">CSS Урок 2</h1>
+                <p class="Description">Фоны и границы: цвета, изображения, рамки<br><br></p>
+                <button class="StartButton" id="9">Начать Урок</button> 
+            </div>
+            <div class="main-item Content">
+                <h1 class="LessonHeader">CSS Урок 3</h1>
+                <p class="Description">Расположение элементов: позиционирование, вложенность</p>
+                <button class="StartButton" id="10">Начать Урок</button> 
+            </div>
+            <div class="main-item Content">
+                <h1 class="LessonHeader">CSS Урок 4</h1>
+                <p class="Description">Текстовое оформление: размер, цвет, выравнивание, шрифты</p>
+                <button class="StartButton" id="11">Начать Урок</button> 
+            </div>
+            <div class="main-item Content">
+                <h1 class="LessonHeader">CSS Урок 5</h1>
+                <p class="Description">Плавающие элементы:<br>float и clear<br><br></p>
+                <button class="StartButton" id="12">Начать Урок</button> 
+            </div>
+        </div> 
+        <div class="ContentRow">
+            <div class="main-item Content">
+                <h1 class="LessonHeader">CSS Урок 6</h1>
+                <p class="Description">Flexbox и Grid: методы создания адаптивных макетов</p>
+                <button class="StartButton" id="13">Начать Урок</button> 
+            </div>
+            <div class="main-item Content">
+                <h1 class="LessonHeader">CSS Урок 7</h1>
+                <p class="Description">Анимации и переходы между состояниями элементов</p>
+                <button class="StartButton" id="14">Начать Урок</button> 
+            </div>
+            <div class="main-item Content">
+                <h1 class="LessonHeader">CSS Урок 8</h1>
+                <p class="Description">Cоздание адаптивных стилей для различных устройств и экранов</p>
+                <button class="StartButton" id="15">Начать Урок</button> 
+            </div>
+            <div class="main-item Content" style="background-color: #eeeeee;"> </div>
+            <div class="main-item Content" style="background-color: #eeeeee;"> </div>
+        </div> 
+    </div>
+</body>
+<script src="MainPageScript.js"></script>
+<style>
+.LessonContainer{
+    width: 80%; 
+    position: relative;
+    top: 203px;
+}
+</style>
+</html>

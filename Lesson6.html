@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Семантические элементы HTML</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Семантические элементы HTML5: <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,<br><code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code></h1>
+        <p>HTML5 принес много новых элементов, которые помогают разработчикам создавать более понятные и легко читаемые веб-страницы. Одними из таких элементов являются <span class="highlight"><code>&lt;header&gt;</code></span>, <span class="highlight"><code>&lt;footer&gt;</code></span>, <span class="highlight"><code>&lt;nav&gt;</code></span> и <span class="highlight"><code>&lt;article&gt;</code></span>, которые помогают структурировать контент страницы</p>
+    
+        <h2>Элемент <code>&lt;header&gt;</code>:</h2>
+        <p>Он предназначен для включения в себя важных заголовков или содержания, которое является частью общего заголовка страницы или раздела страницы. Например, это может быть логотип и название сайта или заголовок раздела</p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 600px; height: 100px;" readonly> <header>
+       <h1>Мой сайт</h1>
+       <p>Добро пожаловать на мой сайт обучения HTML, CSS и JavaScript!</p>
+</header>                                    
+</textarea>
+        </div>
+
+        <h2>Элемент <code>&lt;footer&gt;</code>:</h2>
+        <p>Он представляет собой нижнюю часть страницы или раздела страницы. Здесь обычно располагают информацию о копирайте, ссылки на социальные сети или контактную информацию</p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 500px; height: 100px;" readonly> <footer>
+       <p>© 2024 Мой сайт обучения языкам HTML, CSS и JavaScript</p>
+</footer>                                    
+</textarea>
+        </div>
+
+        <h2>Элемент <code>&lt;nav&gt;</code>:</h2>
+        <p>Он используется для создания навигационного меню. В нём обычно содержатся ссылки на различные разделы сайта или страницы</p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 380px; height: 155px;" readonly> <nav>
+         <ul>
+               <li><a href="#home">Главная</a></li>
+               <li><a href="#about">О нас</a></li>
+               <li><a href="#contact">Контакты</a></li>
+         </ul>
+</nav>
+                                        
+</textarea>
+        </div>
+
+        <h2>Элемент <code>&lt;article&gt;</code>:</h2>
+        <p>Он используется для выделения самостоятельного содержимого на странице, например, поста в блоге, статьи или<br>комментария</p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 400px; height: 100px;" readonly> <article>
+       <h2>10 советов по изучению веб-разработки</h2>
+       <p>Здесь содержится текст статьи...</p>
+</article>                                    
+</textarea>
+        </div>
+ 
+        <p>Используя эти элементы, мы делаем страницу более понятной для поисковых систем и улучшаем доступность для пользователей с ограниченными возможностями. Кроме того, это помогает другим разработчикам легче понять структуру<br>вашего кода и вносить изменения в будущем. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте веб-страницу используя семантические элементы. Ваша страница должна содержать следующие элементы: </p>
+            <ul>
+                <li style="color: white;">Заголовок</li>
+                <li style="color: white;">Меню с разделами вашего сайта</li>
+                <li style="color: white;">Небольшая статья</li>
+                <li style="color: white;">Ваша контактная информация и ссылки на социальные сети</li>
+                <li style="color: white;">Добавьте к каждому разделу по статье</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>
