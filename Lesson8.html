@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Основы CSS</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Основы CSS</h1>
+        <p>CSS (Cascading Style Sheets) - это способ придания стиля вашему веб-сайту. С помощью CSS вы можете изменить цвета, шрифты, размеры и расположение элементов на вашей странице</p>
+    
+        <h2>Внутренние и внешние стили:</h2>
+        <p>CSS можно применять к HTML документу двумя способами: внутренние и внешние стили. Внутренние стили помещаются<br>внутри тега <span class="highlight"><code>&lt;style&gt;</code></span> внутри вашего HTML документа, а внешние стили хранятся в отдельных CSS файлах и подключаются к вашему HTML документу с помощью тега <span class="highlight"><code>&lt;link&gt;</code></span></p>
+     
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 550px; height: 460px;" readonly> <!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Внутренние стили</title>
+          <style>
+                 h1 {
+                        color: blue;
+                 }
+                 p {
+                        font-size: 18px;
+                 }
+          </style>
+</head>
+<body>
+          <h1>Привет, мир!</h1>
+          <p>Это абзац текста с примененными внутренними стилями</p>
+</body>
+</html>
+                                 
+</textarea>
+        </div>
+
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 550px; height: 300px;" readonly> <!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Внешние стили</title>
+          <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <h1>Привет, мир!</h1>
+          <p>Это абзац текста с примененными внешними стилями</p>
+</body>
+</html>
+                                 
+</textarea>
+        </div>
+
+        <div class="example-pane" style="position: absolute; top: 840px; left: 600px;">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 250px; height: 140px;" readonly> h1 {
+        color: blue;
+}
+p {
+        font-size: 18px;
+}
+                                 
+</textarea>
+        </div>
+
+        <h2>Селекторы, свойства и значения:</h2>
+        <p>Селекторы используются для выбора элементов HTML, к которым вы хотите применить стили. Свойства определяют<br>конкретные аспекты стиля, такие как цвет или размер текста, а значения определяют, какими будут эти аспекты</p>
+     
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 300px; height: 200px;" readonly> /* Селектор */
+h1 {
+        /* Свойство: Значение */
+        color: blue; /* Цвет текста синий */
+}
+p {
+        font-size: 18px; /* Размер шрифта 18 пикселей */
+}
+                                 
+</textarea>
+        </div>
+ 
+        <p>Понимание этих основных концепций поможет вам создавать красивые и удобные веб-сайты, а также легко управлять их стилями. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Возьмите веб-страницу с информацией о себе из <b>HTML Урок 1</b>. Добавьте на неё такие стили: </p>
+            <ul>
+                <li style="color: white;">Используйте внутренние стили</li>
+                <li style="color: white;">Измените размер шрифта заголовка и параграфов</li>
+                <li style="color: white;">Измените цвет заголовка и параграфов</li>
+                <li style="color: white;">Измените шрифт заголовка и параграфов (по желанию)</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>

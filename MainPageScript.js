@@ -6,7 +6,16 @@ document.addEventListener("DOMContentLoaded", function() {
     var coursesCount = document.querySelector('.courses-count');
 
     function updateCoursesCount(count) {
-        coursesCount.textContent = "Всего " + count + " уроков";
+        var lastDigit = count % 10;
+        var lastTwoDigits = count % 100;
+    
+        if (lastDigit === 1 && lastTwoDigits !== 11) {
+            coursesCount.textContent = "Всего " + count + " урок";
+        } else if (lastDigit >= 2 && lastDigit <= 4 && (lastTwoDigits < 10 || lastTwoDigits > 20)) {
+            coursesCount.textContent = "Всего " + count + " урока";
+        } else {
+            coursesCount.textContent = "Всего " + count + " уроков";
+        }
     }
 
     searchInput.addEventListener('input', function() {
@@ -52,6 +61,30 @@ document.addEventListener("DOMContentLoaded", function() {
                     break;
                 case 7:
                     window.location.href = "Lesson7.html";
+                    break;
+                case 8:
+                    window.location.href = "Lesson8.html";
+                    break;
+                case 9:
+               //     window.location.href = "Lesson2.html";
+                    break;
+                case 10: 
+               //     window.location.href = "Lesson3.html";
+                    break;
+                case 11:
+               //     window.location.href = "Lesson4.html";
+                    break;
+                case 12:
+               //     window.location.href = "Lesson5.html";
+                    break;
+                case 13:
+                 //   window.location.href = "Lesson6.html";
+                    break;
+                case 14:
+                  //  window.location.href = "Lesson7.html";
+                    break;
+                case 15:
+                    //window.location.href = "Lesson7.html";
                     break;
                 default:
                     alert('Неизвестный урок');
