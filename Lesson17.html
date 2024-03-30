@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>if, else, switch</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Операторы и условные конструкции: if, else, switch</h1>
+        <p>Операторы if, else и switch - это инструменты в JavaScript, которые позволяют вашему коду принимать разные решения на основе условий</p>
+    
+        <h2>Оператор if:</h2>
+        <p>Оператор if позволяет выполнять код, если указанное условие истинно</p>
+        
+        <div class="example-pane" >
+            <h3>JavaScript</h3>
+            <textarea class="html-example" style="width: 250px; height: 150px;" readonly>var number = 10;
+
+if (number % 2 === 0) {
+    console.log("Число четное");
+}
+            </textarea> 
+        </div>
+
+        <p>В этом примере, если переменная number делится на 2 без остатка, то будет выведено сообщение "Число четное"</p>
+
+        <h2>Оператор else:</h2>
+        <p>Оператор else позволяет выполнить код, если условие в операторе if ложно</p>
+        
+        <div class="example-pane" >
+            <h3>JavaScript</h3>
+            <textarea class="html-example" style="width: 250px; height: 180px;" readonly>var number = 10;
+
+if (number % 2 === 0) {
+    console.log("Число четное");
+} else {
+    console.log("Число нечетное");
+}
+            </textarea> 
+        </div>
+
+        <h2>Оператор switch:</h2>
+        <p>Оператор switch позволяет проверить разные варианты значения одной переменной</p>
+        
+        <div class="example-pane" >
+            <h3>JavaScript</h3>
+            <textarea class="html-example" style="width: 400px; height: 375px;" readonly>var day = 3;
+
+switch (day) {
+       case 1:
+              console.log("Сегодня Понедельник");
+              break;
+       case 2:
+              console.log("Сегодня Вторник");
+              break;
+       case 3:
+              console.log("Сегодня Среда");
+              break;
+       // Остальные дни недели...
+       default:
+              console.log("Неизвестный день");
+              break;
+}
+            </textarea> 
+        </div>
+    
+        <p>Операторы и условные конструкции позволяют вашему коду делать различные действия в зависимости от ситуации, что<br>делает его более гибким. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте простую веб-страницу. Ваша страница должна содержать следующий код: </p>
+            <ul>
+                <li style="color: white;">Создайте переменные для названия, цены и категории товара</li>
+                <li style="color: white;">Определите скидку на товар в зависимости от его категории. Например, если категория товара "Еда", то скидка 10%</li>
+                <li style="color: white;">Рассчитайте стоимость товара со скидкой</li>
+                <li style="color: white;">Выведите название, итоговую стоимость и есть ли на товар скидка в alert</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>
