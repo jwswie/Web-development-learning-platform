@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-#editor-container {
+.editor-container {
     display: flex;
     height: 100vh;
 }
@@ -25,9 +25,12 @@ textarea {
 }
 
 #output {
-    height: 50%;
-    overflow: auto;
-    margin-top: 100px;
-    padding: 10px;
-    border-top: 1px solid #ccc;
+    width: 100%;
+    height: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    resize: none;
 }
+

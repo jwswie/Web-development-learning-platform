@@ -9,21 +9,23 @@
 </head>
 
 <body>
-  <div id="editor-container">
+  <div class="editor-container">
+    <header>
+      <ul>
+        <li><a id="FromWindow" href="jscode.html">Javascript</a></li>
+        <li>html</li>
+        <li><a id="FromWindow" href="csscode.html">css</a></li>
+      </ul>
+    </header>
     <div class="editor-pane">
-        <h3>HTML</h3>
+        <button id="RunButton">
+          <p>Run</p>
+        </button>
         <textarea id="html-editor"></textarea>
     </div>
-    <div class="editor-pane">
-        <h3>CSS</h3>
-        <textarea id="css-editor"></textarea>
-    </div>
-    <div class="editor-pane">
-        <h3>JavaScript</h3>
-        <textarea id="js-editor"></textarea>
-    </div>
+    <div class="editor-pane" id="output"></div>
   </div>
-  <div id="output"></div>
+  
 
   <script src="script.js"></script>
 </body>
