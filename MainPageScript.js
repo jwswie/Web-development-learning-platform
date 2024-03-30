@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     window.location.href = "Lesson18.html";
                     break;
                 case 19:
-                    window.location.href = "htmlcode.html";
+                    //window.location.href = "htmlcode.html";
                     break;
                 case 20:
                     //window.location.href = "Lesson5.html";
