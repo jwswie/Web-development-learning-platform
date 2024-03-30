@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Flexbox и Grid</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Flexbox и Grid: методы создания адаптивных макетов</h1>
+        <p>При создании веб-страницы важно, чтобы она хорошо выглядела на любом устройстве, будь то компьютер, планшет или смартфон. Для этого существуют два инструмента: <span class="highlight">Flexbox</span> и <span class="highlight">Grid</span>. Они позволяют нам управлять расположением элементов<br>на странице и создавать адаптивные макеты, которые легко адаптируются к различным размерам экранов</p>
+    
+        <h2>Flexbox:</h2>
+        <p>Это метод компоновки элементов в строку или столбец. Он идеально подходит для создания сложных макетов с различными типами содержимого</p>
+
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 250px; height: 105px;" readonly><div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>  
+</textarea>
+        </div>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 300px; height: 180px;" readonly>.container {
+        display: flex;
+        justify-content: space-between;
+} 
+
+.item {
+        flex: 1;
+}                        
+</textarea> </div>
+
+        <ul>
+            <li><span class="highlight">display: flex;</span>: Определяем контейнер как flex-контейнер</li>
+            <li><span class="highlight">justify-content: space-between;</span>:  Распределяем элементы по всей ширине контейнера с равными промежутками между<br>ними</li>
+            <li><span class="highlight">flex: 1;</span>: Элементы будут занимать равное пространство внутри контейнера</li>
+        </ul>
+
+        <h2>Grid:</h2>
+        <p>Это двумерная система разметки, позволяющая создавать сложные сетки с ячейками</p>
+        <div class="example-pane">
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 250px; height: 105px;" readonly><div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>  
+</textarea>
+        </div>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 500px; height: 220px;" readonly>.container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+} 
+
+.item {
+        background-color: #ddd;
+        padding: 20px;
+}                        
+</textarea> </div>
+
+<ul>
+    <li><span class="highlight">display: grid;</span>: Определяем контейнер как сетку</li>
+    <li><span class="highlight">grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</span>: Создаём колонки, которые автоматически масштабируются в зависимости от размера экрана</li>
+    <li><span class="highlight">gap: 20px;</span>: Промежуток между элементами</li>
+</ul>
+ 
+        <p>Flexbox и Grid - это очень удобные инструменты для создания адаптивных макетов на веб-страницах. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте простую веб-страницу. Добавьте на неё такие стили: </p>
+            <ul>
+                <li style="color: white;">Создайте на странице контейнеры с блоками контента</li>
+                <li style="color: white;">Используйте Flexbox для организации блоков внутри одного из контейнеров</li>
+                <li style="color: white;">Используйте Grid для создания сетки с блоками контента в другом контейнере</li>
+                <li style="color: white;">Стилизуйте блоки контента с помощью CSS (по желанию)</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>
