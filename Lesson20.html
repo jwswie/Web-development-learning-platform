@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Объекты и массивы</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Объекты и массивы: работа с данными и методами объектов и массивов</h1>
+        <p>В JavaScript объекты и массивы - полезные инструменты для хранения и организации данных. Они помогают<br>структурировать информацию так, чтобы её можно было легко использовать в вашем коде</p>
+    
+        <h2>Массивы:</h2>
+        <p>Массив - это набор элементов, которые можно обращаться по их порядковому номеру, который называется индексом</p>
+        
+        <div class="example-pane" >
+            <h3>JavaScript</h3>
+            <textarea class="html-example" style="width: 400px; height: 250px;" readonly>// Создаем пустой массив
+var fruits = [];
+
+// Добавляем элементы в массив
+fruits.push("яблоко");
+fruits.push("банан");
+fruits.push("апельсин");
+
+console.log(fruits); // ["яблоко", "банан", "апельсин"]
+            </textarea> 
+        </div>
+
+        <h2>Объекты:</h2>
+        <p>Объекты - это коллекции пар ключ-значение. Они позволяют организовать данные в структурированном формате</p>
+        
+        <div class="example-pane" >
+            <h3>JavaScript</h3>
+            <textarea class="html-example" style="width: 400px; height: 250px;" readonly>// Создаём объект с информацией о фруктах
+var fruitInfo = {
+      name: "яблоко",
+      color: "красное",
+      weight: 150
+}
+
+console.log(fruitInfo.name); // "яблоко"
+console.log(fruitInfo.color); // "красное"
+console.log(fruitInfo.weight); // 150
+            </textarea> 
+        </div>
+
+        <h2>Работа с данными и методы:</h2>
+        <p>Массивы и объекты имеют различные методы, которые позволяют выполнять различные операции над данными. Например, метод push() для массивов добавляет новый элемент в конец массива, а метод Object.keys() для объектов возвращает массив ключей объекта</p>
+        
+        <div class="example-pane" >
+            <h3>JavaScript</h3>
+            <textarea class="html-example" style="width: 500px; height: 350px;" readonly>// Работа с массивами
+var colors = ["красный", "зеленый", "синий"];
+colors.push("желтый");
+console.log(colors); // ["красный", "зеленый", "синий", "желтый"]
+
+// Работа с объектами
+var car = {
+      brand: "Toyota",
+      model: "Camry",
+      year: 2020
+}
+
+var keys = Object.keys(car);
+console.log(keys); // ["brand", "model", "year"]
+            </textarea> 
+        </div>
+    
+        <p>Понимание работы с массивами и объектами поможет вам эффективно организовывать и использовать данные в ваших программах. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте простую веб-страницу. Ваша страница должна содержать следующий код: </p>
+            <ul>
+                <li style="color: white;">Создайте пустой массив tasks</li>
+                <li style="color: white;">Создайте функцию addTask, которая принимает строку task и добавляет её в конец массива tasks</li>
+                <li style="color: white;">Создайте функцию removeTask, которая принимает индекс элемента в массиве и удаляет соответствующую задачу из массива tasks</li>
+                <li style="color: white;">Создайте функцию listTasks, которая выводит список всех задач в массиве tasks</li>
+            </ul>
+            <button class="StartTaskButton" id="18">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>
