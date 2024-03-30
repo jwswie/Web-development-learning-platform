@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type:  none;
+}
+
+.editor-container {
+    display: flex;
+    height: 100vh;
+}
+
+.editor-pane {
+    flex: 1;
+    padding: 10px;
+}
+
+textarea {
+    width: 40%;
+    height: calc(100% - 70px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+    position:absolute;
+    top: 70px;
+    margin-left: -157px;
+}
+
+.run-Button{
+    width: 10rem;
+    height: 3rem;
+    background: rgb(0, 255, 0);
+    border-radius: 100px;
+}
+
+.run-Button:hover{
+    background: rgb(106, 251, 106);
+}
+
+#output {
+    width: 100%;
+    height: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    resize: none;
+    margin-left: -2rem;
+}
+
