@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест</title>
+  <link rel="stylesheet" href="tests.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-top-panel"> </div>
+  </div>
+  
+  <main>
+    <div class="test">
+      <h2 class="title">HTML</h2>
+      <p>Вопрос <span id="question-number">1</span>/15</p>
+      <form>
+        <fieldset>
+          <legend class="question">Что такое HTML?</legend>
+          <div class="variants">
+            <div>
+              <input type="radio" name="variant" id="variant1">
+              <label class="selector" for="variant1">Язык для создания стилей</label>
+            </div>
+
+            <div>
+              <input type="radio" name="variant" id="variant2">
+              <label class="selector" for="variant2">Язык разметки, который используется для создания веб-страниц.</label>
+            </div>
+
+            <div>
+              <input type="radio" name="variant" id="variant3">
+              <label class="selector" for="variant3">Тип данных</label>
+            </div>
+
+            <div>
+              <input type="radio" name="variant" id="variant4">
+              <label class="selector" for="variant4">Метод</label>
+            </div>
+
+             <div>
+              <input type="radio" name="variant" id="variant5">
+              <label class="selector" for="variant5">Не знаю ответ</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="direction-block">
+          <button class="direction" id="back">*назад</button>
+          <button class="direction" id="complete">*завершить</button>
+          <button class="direction" id="forward">*вперед</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
