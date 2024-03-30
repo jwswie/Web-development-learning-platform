@@ -5,22 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Test</title>
+  <title>Задание CSS</title>
 </head>
 
 <body>
   <div class="editor-container">
     <header>
-      <ul>
+      <div class="header-top-panel"> </div>
+      <div class="header-bottom-panel">
+        <div class="menu">
+        <div class="menu-item" id="FromWindow"><a href="jscode.html">Javascript</a></div>
+        <div class="menu-item" id="FromWindow"><a href="htmlcode.html">HTML</a></div>
+        <div class="menu-item" style="color: #000000;">CSS</div>
+      </div>
+      <!--<ul>
         <li><a id="FromWindow" href="jscode.html">Javascript</a></li>
         <li><a id="FromWindow" href="htmlcode.html">html</a></li>
         <li>css</li>
-      </ul>
+      </ul>-->
     </header>
+
     <div class="editor-pane">
-      <button id="RunButton">
-        <p>Run</p>
-      </button>
+      <button id="RunButton">Run</button>
       <textarea id="css-editor"> </textarea>
     </div>
     <div class="editor-pane" id="output"></div>

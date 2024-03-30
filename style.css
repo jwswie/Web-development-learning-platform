@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+  }
+
+.header-top-panel{
+    position: absolute;
+    top: 0; left: 0;
+    background-color: #0056b3;
+    height: 8%;
+    width: 100%;
+}
+
+.header-bottom-panel{
+    justify-content: center;
+    position: absolute;
+    top: 8%; left: 0;
+    background-color: #ffffff;
+    height: 10%;
+    width: 100%;
+}
+
+.menu {
+    overflow: hidden;
+    position: relative; 
+    top: 20px;
+    left: 5%;
+}
+
+.menu-item {
+    position: relative; 
+    float: left; 
+    margin-right: 30px; 
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    color: #909090;
+}
+
+.editor-container {
+    display: flex;
+    height: 100vh;
+}
+
+.editor-pane {
+    flex: 1;
+    padding: 10px;
+    margin-top: 120px;
+}
+
+textarea {
+    width: 100%;
+    height: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#output {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#RunButton{
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 240px;
+    font-size: 14px;
+    border-radius: 4px;
+    background: #0056b3;
+    color: #ffffff;
+    font-weight: 700;
+    border: none
+}
+
+#RunButton:hover {
+    background-color: #0864c5;
+  }
