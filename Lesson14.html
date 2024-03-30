@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Анимации и переходы</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>CSS-анимации и переходы между состояниями элементов</h1>
+        <p>Когда мы заходим на интересные сайты, мы часто видим, что элементы на странице двигаются, меняют свой вид или появляются медленно. Это происходит благодаря анимациям и переходам, которые можно создавать с помощью CSS</p>
+    
+        <h2>Анимация:</h2>
+        <p>Вы можете заставить элементы двигаться, менять размер или цвет, чтобы сделать ваш сайт более живым и интересным</p>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 700px; height: 280px;" readonly>/* Предварительные настройки анимации */
+@keyframes example {
+     0% { transform: scale(1); }
+     50% { transform: scale(1.2); }
+     100% { transform: scale(1); }
+}
+                
+/* Применение анимации к элементу */
+.element {
+     animation: example 2s infinite; /* Анимация будет повторяться бесконечно через 2 секунды */
+}                 
+</textarea> </div>
+
+        <p>Здесь мы создаём анимацию, которая делает элемент немного больше (увеличивает масштаб), а затем возвращает его к обычному размеру</p>
+
+        <h2>Переход:</h2>
+        <p>Плавное изменение внешнего вида элемента при наведении на него курсора или при изменении его состояния</p>
+
+        <div class="example-pane">
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 700px; height: 220px;" readonly>/* Переход при наведении на элемент */
+.element {
+        transition: background-color 0.3s ease; /* Плавный переход цвета фона за 0.3 секунды */
+} 
+
+.element:hover {
+        background-color: lightblue; /* При наведении курсора на элемент, его фон плавно меняется на голубой */
+}                        
+</textarea> </div>
+ 
+        <p>Анимации и переходы делают ваш сайт более привлекательным и интерактивным для пользователей. С их помощью вы<br>можете добавить дополнительные эффекты и придать своему сайту больше стиля. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте простую веб-страницу. Добавьте на неё такие стили: </p>
+            <ul>
+                <li style="color: white;">Добавьте кнопку</li>
+                <li style="color: white;">Используйте CSS для стилизации кнопки</li>
+                <li style="color: white;">При наведении курсора мыши на кнопку, она должна увеличиваться в размерах и менять цвет фона</li>
+                <li style="color: white;">После того, как курсор мыши убран с кнопки, она должна вернуться к исходному размеру и цвету фона</li>
+            </ul>
+            <button class="StartTaskButton">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>
