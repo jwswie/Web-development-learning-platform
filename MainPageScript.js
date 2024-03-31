@@ -116,10 +116,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     window.location.href = "Lesson20.html";
                     break;
                 case 21:
-                    //window.location.href = "Lesson6.html";
+                    window.location.href = "Lesson21.html";
                     break;
                 case 22:
-                    //window.location.href = "Lesson7.html";
+                    window.location.href = "Lesson22.html";
                     break;
                 default:
                     alert('Неизвестный урок');

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>События</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Обработка событий пользовательского ввода и взаимодействия с элементами DOM</h1>
+        <p>Когда вы посещаете веб-сайт или приложение, и что-то происходит, когда вы щелкаете мышью, нажимаете на клавиатуре или прокручиваете страницу, это называется событием. Обработка событий - это способ, с помощью которого веб-разработчики могут заставить веб-сайт или приложение реагировать на такие действия пользователей</p>
+    
+        <h2>Клик мышью:</h2>
+        <p>Когда пользователь щелкает на кнопке или другом элементе, это генерирует событие click</p>
+
+        <div class="example-pane" >
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 480px; height: 50px;" readonly><button class="button" id="colorButton">Сменить цвет</button></textarea>  
+        </div>
+
+        <div class="example-pane" >
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 300px; height: 170px;" readonly>.button {
+      padding: 10px 20px;
+      background-color: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+}
+            </textarea> 
+        </div>
+        
+        <div class="example-pane" >
+            <h3>JavaScript</h3>
+            <textarea class="html-example" style="width: 400px; height: 200px;" readonly>// Находим кнопку по ID
+var button = document.getElementById('colorButton');
+
+// Добавляем обработчик события click
+button.addEventListener('click', function() {
+      // Изменяем цвет кнопки на красный
+      button.style.backgroundColor = 'red';
+});
+            </textarea> 
+        </div>
+
+        <p>В данном примере кнопка при клике меняет цвет с синего на красный</p>
+
+        <h2>Нажатие клавиши:</h2>
+        <p>Когда пользователь нажимает клавишу на клавиатуре, генерируется событие keydown</p>
+        
+        <div class="example-pane" >
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 250px; height: 50px;" readonly><input type="text" id="inputField"></textarea>  
+        </div>
+        
+        <div class="example-pane" >
+            <h3>JavaScript</h3>
+            <textarea class="html-example" style="width: 400px; height: 250px;" readonly>// Находим поле ввода по ID
+var inputField = document.getElementById('inputField');
+
+// Добавляем обработчик события keydown
+inputField.addEventListener('keydown', function(event) {
+      // Проверяем, что нажатая клавиша - буква
+      if (event.key.length === 1) {
+          // Выводим введенную букву в alert
+          alert('Вы ввели букву: ' + event.key);
+      }
+});
+            </textarea> 
+        </div>
+    
+        <p>Понимание того, как обрабатывать события, позволяет создавать интерактивные и отзывчивые веб-сайты и приложения, которые могут взаимодействовать с пользователем. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Возьмите веб-страницу с формой регистрации из <b>HTML Урок 5</b>. Добавьте на неё следующий код: </p>
+            <ul>
+                <li style="color: white;">Добавьте обработчик события, чтобы при клике на кнопку выполнялась проверка введёных значений</li>
+                <li style="color: white;">У вас должны быть проверки на корректность адреса электронной почты, выбрана ли страна и пол</li>
+                <li style="color: white;">Если регистрация успешна, то вывести всю информацию о пользователе в alert</li>
+                <li style="color: white;">Сделайте вывод информации о пользователе в отдельном окне (по желанию)</li>
+            </ul>
+            <button class="StartTaskButton" id="18">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>

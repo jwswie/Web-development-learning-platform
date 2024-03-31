@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LessonStyle.css">
+    <title>Манипуляции с элементами</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-panel"> </div>
+        <div class="header-bottom-panel">
+            <div class="menu">
+                <div class="menu-item" id="all"><a href="MainPageAll.html">Все</a></div>
+                <div class="menu-item" id="html"><a href="MainPageHTML.html">HTML</a></div>
+                <div class="menu-item" id="css"><a href="MainPageCSS.html">CSS</a></div>
+                <div class="menu-item" id="js"><a href="MainPageJS.html">Java Script</a></div>
+            </div>
+            <button class="MenuButton">Войти</button>          
+        </div>
+    </div>
+
+    <div class="article">
+        <h1>Изменение Содержимого и Стилей HTML-элементов</h1>
+        <p>DOM (Document Object Model) - это способ, с помощью которого браузеры представляют веб-страницы в виде структуры объектов, с которыми JavaScript может взаимодействовать. Манипуляция DOM позволяет нам изменять содержимое и стили HTML-элементов на веб-странице</p>
+    
+        <h2>Изменение Содержимого:</h2>
+        <p>Мы можем изменять содержимое HTML-элементов, например, текст или атрибуты</p>
+
+        <div class="example-pane" >
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 280px; height: 50px;" readonly><div id="myDiv">Привет, мир!</div></textarea>  
+        </div>
+        
+        <div class="example-pane" >
+            <h3>JavaScript</h3>
+            <textarea class="html-example" style="width: 400px; height: 200px;" readonly>// Создаем новый элемент <p>
+var newPara = document.createElement("p");
+newPara.textContent = "Второй абзац";
+
+// Получаем доступ к контейнеру
+var container = document.getElementById("container");
+// Добавляем новый элемент в контейнер
+container.appendChild(newPara);
+            </textarea> 
+        </div>
+
+        <h2>Изменение Стилей:</h2>
+        <p>Мы также можем изменять стили элементов, такие как цвет текста, размер шрифта и т.д</p>
+        
+        <div class="example-pane" >
+            <h3>HTML</h3>
+            <textarea class="html-example" style="width: 250px; height: 50px;" readonly><p id="myPara">Это абзац</p></textarea>  
+        </div>
+
+        <div class="example-pane" >
+            <h3>CSS</h3>
+            <textarea class="html-example" style="width: 300px; height: 90px;" readonly>.highlight {
+      color: red;
+      font-weight: bold;
+}
+            </textarea> 
+        </div>
+        
+        <div class="example-pane" >
+            <h3>JavaScript</h3>
+            <textarea class="html-example" style="width: 400px; height: 150px;" readonly>// Получаем доступ к элементу с id "myPara"
+var myPara = document.getElementById("myPara");
+
+// Добавляем класс "highlight", чтобы изменить стиль
+myPara.classList.add("highlight");
+            </textarea> 
+        </div>
+    
+        <p>Манипуляция DOM - полезный инструмент, который открывает множество возможностей для создания интерактивных и динамических веб-приложений. Давайте потренеруемся</p>
+        
+        <div class="TaskDiv">
+            <h2 style="color: white; font-size: 40px;" >Задание на закрепление материала:</h2>
+            <p style="color: white;">Создайте простую веб-страницу. Добавьте на неё следующий код: </p>
+            <ul>
+                <li style="color: white;">Добавьте кнопку и блок текста</li>
+                <li style="color: white;">Добавьте обработчик события, чтобы при клике на кнопку текст в блоке сменялся</li>
+                <li style="color: white;">Измените стили кнопки и блока текста</li>
+                <li style="color: white;">Добавьте другие элементы (по желанию)</li>
+            </ul>
+            <button class="StartTaskButton" id="18">Начать задание</button>  
+        </div>
+    </div>
+</body>
+<script src="LessonScript.js"></script>
+</html>
