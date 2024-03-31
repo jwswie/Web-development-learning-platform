@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CodeEnviromentCss.css">
+  <title>Test</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <button id="RunButton" class="run-Button">
+        <p>Run</p>
+      </button>
+    </div>
+  </header>
+  <div class="editor-container">
+    <div class="side-panel">
+      <ul>
+        <li><button id="JsButton" class="side-Button"><p>Js</p></button></li>
+        <li><button id="htmlButton" class="side-Button">html</button></li>
+        <li><button id="cssButton" class="side-Button"><p>css</p></button></li>
+      </ul>
+    </div>
+    <div class="editor-pane">
+        <textarea id="html-editor"></textarea>
+        <textarea id="js-editor"></textarea>
+        <textarea id="css-editor"></textarea>
+    </div>
+    <div class="editor-pane" id="output"></div>
+  </div>
+  <script src="CodeEnviromentJs.js"></script>
+</body>
+</html>
