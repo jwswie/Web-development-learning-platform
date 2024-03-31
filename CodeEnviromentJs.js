@@ -28,20 +28,30 @@ function clickJsButton(e){
     htmlEditor.style = 'visibility: hidden;';
     cssEditor.style = 'visibility: hidden;';
     JsEditor.style = 'visibility: visible;';
+    JsBtn.className = 'current-Button';
+    htmlBtn.className = 'side-Button';
+    cssBtn.className = 'side-Button';
 }
 
 function clickHtmlButton(e){
     htmlEditor.style = 'visibility: visible;';
     cssEditor.style = 'visibility: hidden;';
     JsEditor.style = 'visibility: hidden;';
+    JsBtn.className = 'side-Button';
+    htmlBtn.className = 'current-Button';
+    cssBtn.className = 'side-Button';
 }
 
 function clickCssButton(e){
     htmlEditor.style = 'visibility: hidden;';
     cssEditor.style = 'visibility: visible;';
     JsEditor.style = 'visibility: hidden;';
+    JsBtn.className = 'side-Button';
+    htmlBtn.className = 'side-Button';
+    cssBtn.className = 'current-Button';
 }
 
+clickJsButton();
 JsBtn.addEventListener('click', clickJsButton);
 htmlBtn.addEventListener('click', clickHtmlButton);
 cssBtn.addEventListener('click', clickCssButton);
